@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #333;
+  color: #FFFFFF;
+}
+
+.info_bar {
+  display: flex;
+  position: fixed; /* Changed to fixed */
+  top: 0; /* Changed to top */
+  left: 0; /* Changed to left */
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282B30;
+  z-index: 99;
+}
+
+#page_status {
+  margin-left: 50px; /* Changed to margin-left */
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#record_time {
+  position: absolute;
+  right: 10px;
+}
+
+.option_bar {
+  position: fixed; /* Changed to fixed */
+  top: 55px;
+  left: 0; /* Changed to left */
+  width: 270px;
+  height: 100%;
+  font-size: 24px;
+  background-color: #282B30;
+  text-align: left;
+}
+
+.options {
+  margin-top: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.time-contents {
+  margin-top: 55px; /* Changed to margin-top */
+  margin-left: 280px; /* Changed to margin-left */
+  width: calc(100% - 280px); /* Changed to dynamic width */
+  height: calc(100% - 55px); /* Changed to dynamic height */
+  display: flex; /* Added */
+}
+
+.canvas-time {
+  width: 70%;
+  height: 400px; /* Changed to 100% */
+  background-color: #282B30;
+}
+
+.info-lap {
+  margin-left: 5px;
+  width: 30%;
+  height: 400px; /* Changed to 100% */
+  font-size: 28px;
+  background-color: #282B30;
+}
+
+.info-lap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.info-speed {
+  position: absolute;
+  top: 463px;
+  left: 1125px; /* Changed to left */
+  height: 400px; /* Changed to 100% */
+  width: 100%;
+  font-size: 28px;
+  background-color: #282B30;
+}
+
+.info-speed ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #C6C6C6;
+}
+
+.value {
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.canvas-speed {
+  position: absolute;
+  top: 463px;
+  width: 840px;
+  height: 400px;
+  background-color: #282B30;
+  text-align: center;
+  font-size: 28px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Tracker</title>
+    <link rel="stylesheet" href="../styles/track.css">
+</head>
+<body>
+    <div class="info_bar">
+        <span id="page_status">Kart Tracker</span>
+        <span id="record_time">Recorded date: May 7, 2023</span>
+    </div>
+    <div class="option_bar">
+        <div class="options" onclick="redirectToTime()">Pivot Chart</div>
+        <div class="options" onclick="redirectToDash()">Return to Dashboard</div>
+        <div class="options">Select another data</div>
+    </div>
+    <svg width="600" height="450" class="time-contents"></svg>
+    <div id="lapSelection" class="lap-selection"></div>
+
+    <script src="../../node_modules/d3/dist/d3.js"></script>
+    <script src="../js/track.js"></script>
+</body>
+</html>

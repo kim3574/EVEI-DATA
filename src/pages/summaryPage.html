@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Summary</title>
+    <link rel="stylesheet" href="../styles/summaryPage.css">
+</head>
+<body>
+    <div class = "info_bar">
+        <span id = "page_status">Dashboard</span>
+        <span id = "record_time">Recorded date: May 7, 2023</span>
+    </div>
+    <span class = "option_bar">
+        <div class = "options">Select another data</div>
+        <div class = "options" onclick="redirectToTime()">Pivot Chart</div>
+        <div class = "options" onclick="redirectToTime()">Kart Track</div>
+
+    </span> 
+    
+    <div class = "summry-contents">
+        <div class = "info-box-container">
+            <div class = "info-description">Lap Time</div>
+            <div class="info-box">
+                <div class = "content">Overall
+                    <div class = "value" id = "allTime"></div>
+                </div>
+                <div class = "content">Avg.
+                    <div class = "value" id = "avgTime"></div>
+                </div>
+                <div class = "content">Max
+                    <div class = "value" id = "minTime"></div>
+                </div>
+                <div class = "content">Min
+                    <div class = "value" id = "maxTime"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "info-box-container">
+            <div class = "info-description">Speed</div>
+            <div class = "info-box"> 
+                <div class = "content">Avg.
+                    <div class = "value" id = "avgSpeed"></div>
+                </div>
+                <div class = "content">
+                    <div class = "value"></div>
+                </div>
+                <div class = "content">Max
+                    <div class = "value" id = "maxSpeed"></div>
+                </div>
+                <div class = "content">Min
+                    <div class = "value" id = "minSpeed"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "info-box-container">
+            <div class = "info-description">Power</div>
+            <div class = "info-box">
+                <div class = "content">Overall
+                    <div class = "value">0kW</div>
+                </div>
+                <div class = "content">Avg.
+                    <div class = "value">0kW</div>
+                </div>
+                <div class = "content">Max
+                    <div class = "value">0kW</div>
+                </div>
+                <div class = "content">Min
+                    <div class = "value">0kW</div>
+                </div> </div>
+        </div>
+        <div class = "info-box-container">
+            <div class = "info-description">Temperature</div>
+            <div class = "info-box">
+                <div class = "content">Overall
+                    <div class = "value">31.6°</div>
+                </div>
+                <div class = "content">Avg.
+                    <div class = "value">29.3°</div>
+                </div>
+                <div class = "content">Max
+                    <div class = "value">33.8°(Lap 7)</div>
+                </div>
+                <div class = "content">Min
+                    <div class = "value">26°(Lab 1)</div>
+                </div>
+             </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="../js/summaryPage.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #333;
+    color: #FFFFFF;
+  }
+  
+  .info_bar {
+    display: flex;
+    position: fixed; /* Changed to fixed */
+    top: 0; /* Changed to top */
+    left: 0; /* Changed to left */
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282B30;
+    z-index: 99;
+  }
+  
+  #page_status {
+    margin-left: 50px; /* Changed to margin-left */
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  #record_time {
+    position: absolute;
+    right: 10px;
+  }
+  
+  .option_bar {
+    position: fixed; /* Changed to fixed */
+    top: 55px;
+    left: 0; /* Changed to left */
+    width: 270px;
+    height: 100%;
+    font-size: 24px;
+    background-color: #282B30;
+    text-align: left;
+  }
+  
+  .options {
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+.lap-selection {
+    position: fixed;
+    top: 55px;
+    right: 5px; /* Adjusted for correct positioning */
+    width: 455px;
+    height: 550px; /* Fixed height to contain checkboxes */
+    overflow-y: auto; /* Allows scrolling if many laps */
+    z-index: 100; /* Ensures visibility above other content */
+    background-color: #282B30;
+}
+
+.time-contents {
+    position: absolute;
+    top: 55px; /* Position below lapSelection */
+    left: 280px;
+    width: 750px; /* Full width minus sidebar */
+    height: 550px; /* Full height minus top bars */
+    background-color: #282B30;
+    border: 1px solid black;
+}
+
+/* Styling for checkboxes and labels for better visibility */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.label-large {
+    font-size: 30px; /* or any other size */
+    margin-left: 30px;
+
+    margin-right: 330px;
+}
